@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				background-color: #f3f3f3;
+			}
+			.card {
+				background-color: #fff;
+				width: 90%;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+				display: flex;
+				border-radius: 5px;
+				margin: 0 0 0 7%;
+                position: relative;
+			}
+
+			.text {
+				width: 85%;
+				padding: 1em 0 1em 3em;
+				border-right: 2px solid #000;
+			}
+
+			.info {
+				width: 15%;
+				margin: 0 auto;
+                display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+            .circle {
+                background-color: aqua;
+                width: 4.5em;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                display: flex;
+                position: absolute;
+                left: -5%;
+                align-items: center;
+                justify-content: center;
+                margin: 1% 0 0 0;
+            }
+
+            .circle .inner {
+                background-color: #fff;
+                width: 85%;
+                aspect-ratio: 1/1;
+                border-radius: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: xx-large;
+                font-weight: bolder;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="text"><span>Titel</span>
+            <p>Hier kommt der text hin</p></div>
+			<div class="info"><span>4h</span></div>
+            <div class="circle">
+                <div class="inner"><span>01</span></div>
+            </div>
+		</div>
+
+	</body>
+</html>
