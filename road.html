@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: #f5f5f7;
+			}
+			.circle-outer {
+				background: rgb(239,215,0);
+background: linear-gradient(45deg, rgba(239,215,0,1) 45%, rgba(247,111,87,1) 100%);
+				width: 5em;
+				height: 5em;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 0 0 1em;
+                position: absolute;
+			}
+			.circle-inner {
+				background-color: #fff;
+				aspect-ratio: 1/1;
+				width: 85%;
+				border-radius: inherit;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.roadmap-item {
+				display: flex;
+				align-items: center;
+                margin: 2em 0 0 0;
+                
+			}
+			.circle-inner span {
+				font-size: 2.5em;
+				font-weight: bolder;
+			}
+
+			.title span,
+            .time span {
+				font-size: 1.5em;
+				font-weight: bolder;
+			}
+
+			.card {
+				background-color: #fff;
+				border-radius: 5px;
+				margin: 0 0 0 3.5em;
+                display: flex;
+                align-items: center;
+                padding: 0.6em 0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                position: relative;
+			}
+
+            .card .text {
+                border-right: 2px solid #000;
+                padding: 0.6em 0.4em 0.6em 4em;
+                width: 75%;
+            }
+
+            .card .time {
+                width: 20%;
+                position: absolute;
+                right: -2em;
+
+
+            }
+            .card .time span {
+                padding: 0 1.5em;
+            }
+
+            .time img{
+                width: 40%;
+                padding: 0 1.5em;
+                margin: 0 auto;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="roadmap-item">
+			<div class="circle-outer">
+				<div class="circle-inner">
+					<span>01</span>
+				</div>
+			</div>
+			<div class="card">
+				<div class="text">
+					<div class="title"><span>Start</span></div>
+					<div class="description">
+						<span>Hier kommt die beschreibung zu den einzelnnen Punkten hinein</span>
+					</div>
+				</div>
+                <div class="time">
+                    <img src="./img/play.svg" alt="">
+                </div>
+			</div>
+		</div>
+        <div class="roadmap-item">
+			
+			<div class="card">
+				<div class="text">
+					<div class="title"><span>Start</span></div>
+					<div class="description">
+						<span>Hier kommt die beschreibung zu den einzelnnen Punkten hinein</span>
+                        <span>oder auch etwas mehr Text. ne nach  dem </span>
+					</div>
+				</div>
+                <div class="time">
+                    <span>4h</span>
+                </div>
+			</div>
+            <div class="circle-outer">
+				<div class="circle-inner">
+					<span>02</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

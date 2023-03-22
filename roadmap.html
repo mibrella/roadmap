@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Meine Roadmap</title>
+		<style>
+			body {
+				background-color: #f9f9f9;
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			h1,
+			h2 {
+				color: #4e4e4e;
+				font-weight: bold;
+				margin: 0 0 20px;
+				text-align: center;
+			}
+
+			.container {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin: 40px auto;
+				max-width: 800px;
+			}
+
+			.item {
+				background-color: #ffffff;
+				border-radius: 10px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+				flex-basis: calc(33.33% - 20px);
+				margin: 20px 0;
+				padding: 20px;
+				text-align: center;
+				transition: all 0.2s ease;
+			}
+
+			.item:hover {
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+				transform: translateY(-5px);
+			}
+
+			.item__icon {
+				color: #4e4e4e;
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+
+			.item__title {
+				color: #4e4e4e;
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+
+			.item__description {
+				color: #4e4e4e;
+				font-size: 16px;
+				margin: 0;
+			}
+
+			@media screen and (max-width: 767px) {
+				.item {
+					flex-basis: calc(50% - 20px);
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.item {
+					flex-basis: 100%;
+				}
+			}
+			/*
+      .roadmap {
+        display: flex;
+        align-items: center;
+      }
+
+      .roadmap-item:hover {
+        box-shadow: -4px 0 0px rgb(237, 218, 13);
+        transform: translateX(4px);
+      }
+
+      .roadmap-item {
+        padding: 1.5em 1em 1.5em 3em;
+        background-color: #fff;
+        margin: 1em 1em 1em 1.5em;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        transition: all 0.2s ease;
+        display: flex;
+        width: 100%;
+      }
+      .roadmap-item-title {
+        font-size: x-large;
+        font-weight: bold;
+      }
+
+      .circle-number {
+        display: flex;
+        background-color: rgb(238, 224, 19);
+        border-radius: 50%;
+        font-size: 20px;
+        width: 4em;
+        height: 4em;
+        text-align: center;
+
+        margin-left: 2em;
+        font-size: 2em;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle-inner {
+        background-color: white;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        line-height: calc(4em - 25%);
+      }
+
+      .text {
+        display: block;
+        padding-right: 2.5em;
+        border-right: 2px solid black;
+        width: 100%;
+      }
+
+      .time {
+        font-size: xx-large;
+        font-weight: bolder;
+        padding-right: 1em;
+        text-align: center;
+        padding: 0 1em;
+        display: table;
+      }
+
+      .time > span {
+        display: table-cell;
+        vertical-align: middle;
+      } */
+
+			.roadmap {
+				width: 90%;
+				border-spacing: 1em;
+			}
+
+			.roadmap-item {
+				background-color: #fff;
+				padding: 1em 2em 1em 1em;
+				border-radius: 5px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			.title {
+				font-weight: bolder;
+				font-size: 1.5em;
+				padding: 0 0 0.1em 0;
+			}
+
+			.circle-outer {
+				width: 4.5em;
+				height: 4.5em;
+				background-color: rgb(79, 209, 253);
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 80% 0 20%;
+			}
+
+			.circle-inner {
+				background-color: #fff;
+				width: 85%;
+				height: 85%;
+				border-radius: inherit;
+				display: inherit;
+				justify-content: inherit;
+				align-items: inherit;
+			}
+
+			.circle-inner span {
+				font-size: large;
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Meine Roadmap</h1>
+		<div class="container">
+			<div class="item">
+				<div class="item__icon"><i class="fas fa-lightbulb"></i></div>
+				<div class="item__title">Idee finden</div>
+				<div class="item__description">Brainstorming und Ideensammlung</div>
+			</div>
+			<div class="item">
+				<div class="item__icon"><i class="fas fa-paint-brush"></i></div>
+				<div class="item__title">Design erstellen</div>
+				<div class="item__description">Wireframing und UI-Design</div>
+			</div>
+		</div>
+
+		<div class="roadmap">
+			<div class="circle-number"><div class="circle-inner">01</div></div>
+			<div class="roadmap-item">
+				<div class="text">
+					<div class="roadmap-item-title">Start</div>
+					<div class="roadmap-item-description">
+						Hier kommt die beschreibung zu dem Modul hinein.<br />
+					</div>
+					<div>Hier stehen noch weiter Informationen zu dem Projekt</div>
+				</div>
+				<div class="time"><span>4h</span></div>
+			</div>
+		</div>
+		<br />
+		<table class="roadmap">
+			<tbody>
+				<tr>
+					<td>
+						<div class="circle-outer">
+							<div class="circle-inner">
+								<span>01</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="roadmap-item">
+							<div class="title">Start</div>
+							<div class="description">
+								Hier kommt alles was es über den Punkt zu sagen gibt hinein :D
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="circle-outer">
+							<div class="circle-inner">
+								<span>01</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="roadmap-item">
+							<div class="title">Start</div>
+							<div class="description">
+								Hier kommt alles was es über den Punkt zu sagen gibt hinein :D
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
